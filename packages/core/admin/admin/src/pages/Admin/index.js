@@ -12,6 +12,7 @@ import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 
 import GuidedTourModal from '../../components/GuidedTour/Modal';
+import CmdK from '../../components/CmdK';
 import LeftMenu from '../../components/LeftMenu';
 import AppLayout from '../../layouts/AppLayout';
 import { useMenu, useConfigurations } from '../../hooks';
@@ -88,6 +89,7 @@ const Admin = () => {
           />
         }
       >
+        <CmdK />
         <Suspense fallback={<LoadingIndicatorPage />}>
           <Switch>
             <Route path="/" component={HomePage} exact />
